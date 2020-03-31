@@ -5,7 +5,7 @@ import styled from "styled-components";
 function Work() {
 
   return (
-    <MainDiv>Check out some of my work!</MainDiv>
+    <MainDiv id="work">Check out some of my work!</MainDiv>
   )
 }
 
