@@ -17,20 +17,21 @@ function LandingPage() {
   return (
     <MainDiv>
       <p className="avatar">avatar</p>
-      <AlignHeader>
+      <AlignName>
         <h1 className="name">Hello, my name's </h1>
         <h1 className="name" className="main-name">Josh</h1>
-      </AlignHeader>
-      <h2 className="title">
-        I'm a Full Stack Web Developer
-      </h2>
+      </AlignName>
+      <AlignTitle>
+        <h2 className="title">I'm a</h2>
+        <h2 className="title" className="main-title">Full Stack Web Developer </h2>
+      </AlignTitle>
       <StyledIcons className="icons">
         <GroupedGit>
-          <a target="_blank" href="https://github.com/JoshHill15"><StyledGit className="first-icon" src={githubSVG} alt="github" /></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/JoshHill15"><StyledGit className="first-icon" src={githubSVG} alt="github" /></a>
           <StyledP className="first-icon">Github</StyledP>
         </GroupedGit>
         <GroupedLinkedin>
-          <a target="_blank" href="https://www.linkedin.com/in/josh-hill-b2b463b8/"><StyledLinkedin className="second-icon" src={linkedinSVG} alt="Linkedin" /></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/josh-hill-b2b463b8/"><StyledLinkedin className="second-icon" src={linkedinSVG} alt="Linkedin" /></a>
           <StyledP className="second-icon">Linked in</StyledP>
         </GroupedLinkedin>
         <GroupedMail>
@@ -38,7 +39,7 @@ function LandingPage() {
           <StyledP className="third-icon">Contact Me</StyledP>
         </GroupedMail>
         <GroupedResume>
-          <a href={PDF} target="_blank" ><StyledResume className="fourth-icon" src={resumeSVG} alt="Resume" /></a>
+          <a href={PDF} target="_blank" rel="noopener noreferrer" ><StyledResume className="fourth-icon" src={resumeSVG} alt="Resume" /></a>
           <StyledP className="fourth-icon">Resume</StyledP>
         </GroupedResume>
       </StyledIcons>
@@ -65,9 +66,16 @@ const MainDiv = styled.div`
   background-position:center;
   height:100vh;
 `
-const AlignHeader = styled.div`
+const AlignName = styled.div`
   display:flex;
-  width:25%;
+  width:80%;
+  justify-content:center;
+`
+
+const AlignTitle = styled.div`
+  display:flex;
+  width:80%;
+  justify-content:center;
 `
 
 const StyledIcons = styled.div`

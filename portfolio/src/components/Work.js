@@ -5,14 +5,14 @@ import FirstProject from "../projects/FirstProject"
 function Work() {
 
   return (
-    <div>
+    <section>
       <div id="work">
         <FirstProject />
       </div>
       <SecondDiv id="work">
         second
       </SecondDiv>
-    </div>
+    </section>
   )
 }
 
