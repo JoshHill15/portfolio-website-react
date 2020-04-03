@@ -44,10 +44,10 @@ function LandingPage() {
         </GroupedResume>
       </StyledIcons>
       <div className="to-work-container">
-        <div href="#work" onClick={e => History.push("/work")} className="arrow"></div>
-        <div href="#work" onClick={e => History.push("/work")} className="arrow"></div>
-        <div href="#work" onClick={e => History.push("/work")} className="arrow"></div>
-        <span href="#work" onClick={e => History.push("/work")} className="to-work">My work</span>
+        <div className="arrow"></div>
+        <div className="arrow"></div>
+        <div className="arrow"></div>
+        <a href="#work"><span className="to-work">My work</span></a>
       </div>
     </MainDiv>
   )

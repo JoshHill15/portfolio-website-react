@@ -107,7 +107,7 @@ const StyledButtonsDiv = styled.div`
   display:flex;
   justify-content:space-around;
   align-items:center;
-  width:45%;
+  width:40%;
 `
 
 const StyledGitIMG = styled.img`
