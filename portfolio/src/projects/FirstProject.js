@@ -3,6 +3,8 @@ import sauti1 from "../images/smaller-sauti.png"
 import styled from "styled-components";
 import AOS from "aos"
 import 'aos/dist/aos.css'
+import githubSVG from "../images/github-logo.svg"
+import linkSVG from "../images/link.svg"
 
 
 function FirstProject() {
@@ -18,11 +20,18 @@ function FirstProject() {
           <img src={sauti1} alt="sauti" />
           <StyledH3 data-aos="fade-up">
             <span>React-router-dom </span>
-            <span>Apollo-server-express</span>
-            <span> Material UI</span>
-            <span> @testing-library/react</span>
-            <span> Graphql</span>
-            <span> Paypal</span>
+            <StyledSpans>| </StyledSpans>
+            <span>Apollo-server-express </span>
+            <StyledSpans>| </StyledSpans>
+            <span> Material UI </span>
+            <StyledSpans>| </StyledSpans>
+            <span> @testing-library/react </span>
+            <StyledSpans>| </StyledSpans>
+            <span> Graphql </span>
+            <StyledSpans>| </StyledSpans>
+            <span> Paypal API </span>
+            <StyledSpans>| </StyledSpans>
+            <span> Nivo</span>
           </StyledH3>
         </IMGdiv>
         <ContentDiv>
@@ -32,7 +41,10 @@ function FirstProject() {
           You may filter or crossfilter the data in any way you wish,
           additionally you can download the results of any search
              if you are a paid member.</StyledP>
-
+          <StyledButtonsDiv>
+            <a href="https://github.com/orgs/Lambda-School-Labs/teams/labs-21-sauti-data-bank" target="_blank"><StyledGitIMG src={githubSVG} data-aos="fade-up" /></a>
+            <a target="_blank" href="https://www.databank.sautiafrica.org/"><StyledLinkIMG src={linkSVG} data-aos="fade-up" /></a>
+          </StyledButtonsDiv>
         </ContentDiv>
       </MainDiv>
     </div>
@@ -67,7 +79,6 @@ const ContentDiv = styled.div`
 
 `
 
-
 const StyledH1 = styled.h1`
   color:white;
   font-size:2rem;
@@ -83,7 +94,6 @@ const StyledP = styled.p`
   margin-left:6%;
   font-family: 'Noto Serif KR', serif;
   font-weight:bold;
-  margin-bottom:20%;
 `
 
 const StyledH3 = styled.h3`
@@ -91,8 +101,30 @@ const StyledH3 = styled.h3`
   font-family: 'Oswald', sans-serif;
   diplay:flex;
   flex-direction:column;
-  width:100%;
+`
 
+const StyledButtonsDiv = styled.div`
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  width:45%;
+`
+
+const StyledGitIMG = styled.img`
+  width:60px;
+  margin-bottom:20%;
+`
+
+const StyledLinkIMG = styled.img`
+  width:73px;
+  margin-bottom:20%;
 
 `
+
+const StyledSpans = styled.span`
+  color:white;
+  font-size:1.7rem;
+`
+
+
 export default FirstProject
