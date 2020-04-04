@@ -1,3 +1,5 @@
+
+
 .avatar{
   animation: load-down 600ms ease-in 200ms;
   animation-fill-mode: forwards;
@@ -10,12 +12,11 @@
   animation-fill-mode: forwards;
   transform: translateY(-30px);
   opacity: 0;
-  font-size: 2.8rem;
   display:flex;
+
 }
 
 .main-name{
-  font-size:2.8rem;
   margin-left:1.5%;
   color:white;
   animation: load-down 600ms ease-in 200ms;
@@ -79,7 +80,6 @@
 
 .to-work-container{
   margin-top:9%;
-  cursor:pointer;
 
 }
 
@@ -217,5 +217,19 @@
 @keyframes pulse {
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width:550px){
+
+  .to-work-container{
+    margin-top:30%;
+  }
+}
+
+@media (max-width:450px){
+
+  .to-work-container{
+    margin-top:10%;
   }
 }

@@ -5,25 +5,32 @@ import githubSVG from "../images/github-logo.svg"
 import linkedinSVG from "../images/linkedin.svg"
 import resumeSVG from "../images/portfolio.svg"
 import background from "../images/midcity.jpg"
+import avatar from "../images/joshhill15.png"
 import PDF from "../images/Joshua_Hill_Resume.pdf"
 
 import "../landingpage.css"
 
-import { useHistory } from "react-router-dom"
+const firstMediaQuery = "1200px"
+const secondMediaQuery = "730px"
+const thirdMediaQuery = "550px"
+const fourthMediaQuery = "450px"
+
+
 
 
 function LandingPage() {
-  const History = useHistory()
   return (
     <MainDiv>
-      <p className="avatar">avatar</p>
+      <AvatarDiv className="avatar">
+        <Avatar src={avatar} alt="avatar" />
+      </AvatarDiv>
       <AlignName>
-        <h1 className="name">Hello, my name's </h1>
-        <h1 className="name" className="main-name">Josh</h1>
+        <StyledName className="name">Hello, my name's </StyledName>
+        <StyledName className="name" className="main-name">Josh</StyledName>
       </AlignName>
       <AlignTitle>
-        <h2 className="title">I'm a</h2>
-        <h2 className="title" className="main-title">Full Stack Web Developer </h2>
+        <StyledTitle className="title">I'm a</StyledTitle>
+        <StyledTitle className="title" className="main-title">Full Stack Web Developer </StyledTitle>
       </AlignTitle>
       <StyledIcons className="icons">
         <GroupedGit>
@@ -66,16 +73,52 @@ const MainDiv = styled.div`
   background-position:center;
   height:100vh;
 `
+
+const AvatarDiv = styled.div`
+  background:salmon;
+  width:10%;
+  border-radius: 15px;
+
+`
+
+const Avatar = styled.img`
+  width:50%;
+
+`
+
 const AlignName = styled.div`
   display:flex;
-  width:80%;
+  width:100%;
   justify-content:center;
+
+`
+
+const StyledName = styled.h1`
+  font-size:2.8rem;
+
+  @media(max-width: ${thirdMediaQuery}) {
+    font-size:2.3rem;
+  }
+  @media(max-width: ${fourthMediaQuery}) {
+    font-size:1.8rem;
+  }
 `
 
 const AlignTitle = styled.div`
   display:flex;
-  width:80%;
+  width:100%;
   justify-content:center;
+
+  @media(max-width: ${firstMediaQuery}) {
+    width:100%;
+  }
+`
+
+const StyledTitle = styled.h2`
+
+@media(max-width: ${fourthMediaQuery}) {
+  font-size:1.1rem;
+}
 `
 
 const StyledIcons = styled.div`
@@ -84,6 +127,21 @@ const StyledIcons = styled.div`
   width:30%;
   justify-content:flex-end;
 
+    @media(max-width: ${firstMediaQuery}) {
+      width:45%;
+    }
+
+    @media(max-width: ${secondMediaQuery}) {
+      width:70%;
+    }
+
+    @media(max-width: ${thirdMediaQuery}) {
+      width:85%;
+    }
+
+    @media(max-width: ${fourthMediaQuery}) {
+      flex-direction:column;
+    }
 `
 const StyledGit = styled.img`
   width:40%;
@@ -136,7 +194,7 @@ const GroupedResume = styled.div`
   width:25%;
   height:85%;
   cursor:pointer;
-  margin-bottom:2.2%;
+  margin-bottom:2.8%;
 `
 
 const StyledP = styled.p`
