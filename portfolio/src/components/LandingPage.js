@@ -67,7 +67,7 @@ const MainDiv = styled.div`
   justify-content: center;
   flex-direction:column;
   background-image: url(${background});
-  opacity:.90;
+  opacity:.82;
   max-size:100%;
   background-size:cover;
   background-position:center;

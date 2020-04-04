@@ -19,7 +19,8 @@ const sixthMediaQuery = "370px"
 function FirstProject() {
 
   AOS.init({
-    duration: 900
+    duration: 1000,
+    offset: 100
   })
 
   return (
