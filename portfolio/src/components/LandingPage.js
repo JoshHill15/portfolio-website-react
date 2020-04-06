@@ -67,7 +67,7 @@ const MainDiv = styled.div`
   justify-content: center;
   flex-direction:column;
   background-image: url(${background});
-  opacity:.82;
+  opacity:.8;
   max-size:100%;
   background-size:cover;
   background-position:center;
@@ -75,10 +75,21 @@ const MainDiv = styled.div`
 `
 
 const AvatarDiv = styled.div`
-  background:salmon;
-  width:10%;
-  border-radius: 15px;
+  width:17%;
+  height:13%;
 
+  @media(max-width: ${firstMediaQuery}) {
+    width:24%;
+  }
+
+  
+  @media(max-width: ${secondMediaQuery}) {
+    width:42%;
+  }
+
+  @media(max-width: ${thirdMediaQuery}) {
+    width:55%;
+  }
 `
 
 const Avatar = styled.img`
