@@ -12,7 +12,7 @@ const thirdMediaQuery = "1000px"
 const fourthMediaQuery = "775px"
 const fifthMediaQuery = "600px"
 const sixthMediaQuery = "370px"
-
+const seventhMediaQuery = "200px"
 
 
 
@@ -189,6 +189,10 @@ const StyledP = styled.p`
 
   @media (max-width: ${sixthMediaQuery}){
     font-size:1rem;
+  }
+
+  @media (max-width: ${seventhMediaQuery}){
+    font-size:0.8rem;
   }
 
 `
