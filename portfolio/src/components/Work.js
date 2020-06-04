@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components";
 import FirstProject from "../projects/FirstProject"
+import SecondProject from "../projects/SecondProject"
+import ThirdProject from "../projects/ThirdProject";
 
 function Work() {
 
@@ -9,18 +11,15 @@ function Work() {
       <div id="work">
         <FirstProject />
       </div>
-      <SecondDiv id="work">
-        second
-      </SecondDiv>
+      <div id="work2">
+        <SecondProject />
+      </div>
+      <div>
+        <ThirdProject />
+      </div>
     </section>
   )
 }
 
-
-
-const SecondDiv = styled.div`
-  // background: red;
-  height:90vh;
-`
 
 export default Work

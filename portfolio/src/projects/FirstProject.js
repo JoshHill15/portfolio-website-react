@@ -15,7 +15,6 @@ const sixthMediaQuery = "370px"
 const seventhMediaQuery = "200px"
 
 
-
 function FirstProject() {
 
   AOS.init({
@@ -35,7 +34,7 @@ function FirstProject() {
             <StyledSpans>| </StyledSpans>
             <span> Material UI </span>
             <StyledSpans>| </StyledSpans>
-            <span> @testing-library/react </span>
+            <span> MySQL database </span>
             <StyledSpans>| </StyledSpans>
             <span> Graphql </span>
             <StyledSpans>| </StyledSpans>
@@ -54,7 +53,7 @@ function FirstProject() {
             <StyledSpans>| </StyledSpans>
             <span> Material UI </span>
             <StyledSpans>| </StyledSpans>
-            <span> @testing-library/react </span>
+            <span>MySQL database </span>
             <StyledSpans>| </StyledSpans>
             <span> Graphql </span>
             <StyledSpans>| </StyledSpans>
@@ -67,9 +66,9 @@ function FirstProject() {
           You may filter or crossfilter the data in any way you wish,
           additionally you can download the results of any search
              if you are a paid member.</StyledP>
-          <StyledButtonsDiv>
-            <a rel="noopener noreferrer" href="https://github.com/orgs/Lambda-School-Labs/teams/labs-21-sauti-data-bank" target="_blank"><StyledGitIMG src={githubSVG} data-aos="fade-up" /></a>
-            <a rel="noopener noreferrer" target="_blank" href="https://www.databank.sautiafrica.org/"><StyledLinkIMG src={linkSVG} data-aos="fade-up" /></a>
+          <StyledButtonsDiv data-aos="fade-up">
+            <a rel="noopener noreferrer" href="https://github.com/orgs/Lambda-School-Labs/teams/labs-21-sauti-data-bank" target="_blank"><StyledGitIMG src={githubSVG} /></a>
+            <a rel="noopener noreferrer" target="_blank" href="https://www.databank.sautiafrica.org/"><StyledLinkIMG src={linkSVG} /></a>
           </StyledButtonsDiv>
         </ContentDiv>
       </MainDiv>
