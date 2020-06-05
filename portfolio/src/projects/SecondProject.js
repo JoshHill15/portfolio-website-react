@@ -23,7 +23,7 @@ function SecondProject() {
   return (
     <MainDiv>
       <IMGdiv>
-        <a rel="noopener noreferrer" target="_blank" href="google.com"> <StyledIMG data-aos="fade-up" src={disney} alt="disney" /></a>
+        <a rel="noopener noreferrer" target="_blank" href="https://disneyparent-5o9m3e76w.now.sh/"> <StyledIMG data-aos="fade-up" src={disney} alt="disney" /></a>
         <StyledTechnologiesDiv data-aos="fade-up">
           <span>Express </span>
           <StyledSpans>| </StyledSpans>

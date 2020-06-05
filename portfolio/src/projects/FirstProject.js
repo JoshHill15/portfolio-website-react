@@ -28,7 +28,7 @@ function FirstProject() {
         <IMGdiv >
           <a rel="noopener noreferrer" target="_blank" href="https://www.databank.sautiafrica.org/"> <StyledIMG data-aos="fade-up" src={sauti} alt="sauti" /></a>
           <StyledTechnologiesDiv data-aos="fade-up">
-            <span>React-router-dom </span>
+            <span>React-Router-Dom </span>
             <StyledSpans>| </StyledSpans>
             <span>Apollo-server-express </span>
             <StyledSpans>| </StyledSpans>
@@ -47,7 +47,7 @@ function FirstProject() {
           <StyledH1 data-aos="fade-up">Sauti Databank</StyledH1>
           <StyledAltIMG data-aos="fade-up" src={sauti} alt="alt-sauti" />
           <StyledAltTechnologiesDiv data-aos="fade-up">
-            <span>React-router-dom </span>
+            <span>React-Router-Dom </span>
             <StyledSpans>| </StyledSpans>
             <span>Apollo-server-express </span>
             <StyledSpans>| </StyledSpans>
