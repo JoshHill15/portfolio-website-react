@@ -10,7 +10,7 @@ const firstMediaQuery = "1530px"
 const secondMediaQuery = "1240px"
 const thirdMediaQuery = "1000px"
 const fourthMediaQuery = "800px"
-const fifthMediaQuery = "720px"
+const fifthMediaQuery = "730px"
 const sixthMediaQuery = "370px"
 
 function SecondProject() {
@@ -76,6 +76,7 @@ function SecondProject() {
           protection and safety to children, while parents can still ride the attractions that they're
           interested in.
         </StyledP>
+        <StyledP data-aos="fade-up">Role: Backend Developer</StyledP>
         <StyledButtonsDiv>
           <a rel="noopener noreferrer" href="https://github.com/Build-Week-Web26-Disney-Parents/BE" target="_blank"><StyledGitIMG src={githubSVG} data-aos="fade-up" /></a>
           <a rel="noopener noreferrer" target="_blank" href="https://disneyparent-5o9m3e76w.now.sh/"><StyledLinkIMG src={linkSVG} data-aos="fade-up" /></a>
@@ -94,7 +95,7 @@ const MainDiv = styled.div`
 const IMGdiv = styled.div`
   height:70%;
   width:60%;
-  margin-left:3%;
+  margin-left:1%;
   padding-top:8%;
 
   @media (max-width: ${thirdMediaQuery}){
@@ -133,9 +134,12 @@ const ContentDiv = styled.div`
 
   @media (max-width: ${thirdMediaQuery}){
     width:100%;
-    height:100%;
+    height:95%;
     padding-top:0%;
   }
+
+
+  
 `
 
 const StyledTechnologiesDiv = styled.div`
@@ -172,7 +176,7 @@ const StyledP = styled.p`
   @media (max-width: ${thirdMediaQuery}){
     width:90%;
     margin-left:5%;
-    font-size:1.2rem;
+    font-size:1.1rem;
 
   }
 
