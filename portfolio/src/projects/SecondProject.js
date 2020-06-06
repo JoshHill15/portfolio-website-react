@@ -209,11 +209,19 @@ const StyledGitIMG = styled.img`
   width:60px;
   margin-bottom:20%;
 
+  @media (max-width: ${sixthMediaQuery}){
+    width:45px;
+  }
+
 `
 
 const StyledLinkIMG = styled.img`
   width:73px;
   margin-bottom:20%;
+
+  @media (max-width: ${sixthMediaQuery}){
+    width:53px;
+  }
 
 `
 const StyledAltTechnologiesDiv = styled.div`

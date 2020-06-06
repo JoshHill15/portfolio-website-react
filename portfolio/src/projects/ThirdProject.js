@@ -8,6 +8,7 @@ import linkSVG from "../images/link.svg"
 
 const firstMediaQuery = "1000px"
 const secondMediaQuery = "600px"
+const thirdMediaQuery = "370px"
 
 function ThirdProject() {
 
@@ -137,11 +138,19 @@ const StyledGitIMG = styled.img`
   width:60px;
   margin-bottom:20%;
 
+  @media (max-width: ${thirdMediaQuery}){
+    width:38px;
+  }
+
 `
 
 const StyledLinkIMG = styled.img`
   width:73px;
   margin-bottom:20%;
+
+  @media (max-width: ${thirdMediaQuery}){
+    width:45px;
+  }
 
 `
 
