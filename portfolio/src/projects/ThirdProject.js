@@ -12,11 +12,6 @@ const thirdMediaQuery = "370px"
 
 function ThirdProject() {
 
-  AOS.init({
-    duration: 1000,
-    offset: 100
-  })
-
   return (
     <MainDiv>
       <IMGdiv data-aos="fade-up">
