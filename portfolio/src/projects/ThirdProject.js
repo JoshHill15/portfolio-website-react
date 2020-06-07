@@ -1,13 +1,12 @@
 import React from "react"
 import lendr from "../images/lendr.png"
 import styled from "styled-components";
-import AOS from "aos"
 import 'aos/dist/aos.css'
 import githubSVG from "../images/github-logo.svg"
 import linkSVG from "../images/link.svg"
 
 const firstMediaQuery = "1000px"
-const secondMediaQuery = "600px"
+const secondMediaQuery = "690px"
 const thirdMediaQuery = "370px"
 
 function ThirdProject() {
@@ -37,6 +36,23 @@ function ThirdProject() {
       <ContentDiv data-aos="fade-up">
         <StyledH1 data-aos="fade-up">Lendr</StyledH1>
         <StyledAltIMG src={lendr} alt="lendr" />
+         <StyledAltTechnologiesDiv>
+          <span>GSAP </span>
+          <StyledSpans>| </StyledSpans>
+          <span>Formik </span>
+          <StyledSpans>| </StyledSpans>
+          <span>React </span>
+          <StyledSpans>| </StyledSpans>
+          <span>Redux </span>
+          <StyledSpans>| </StyledSpans>
+          <span>Styled-Components </span>
+          <StyledSpans>| </StyledSpans>
+          <span>Redux-Thunk </span>
+          <StyledSpans>| </StyledSpans>
+          <span>Axios </span>
+          <StyledSpans>| </StyledSpans>
+          <span>React-Router-Dom</span>
+        </StyledAltTechnologiesDiv>
         <StyledP data-aos="fade-up">A convenient application to keep track of items lent
         between people.
         </StyledP>
@@ -113,6 +129,11 @@ const StyledP = styled.p`
   font-family: 'Noto Serif KR', serif;
   font-weight:bold;
 
+    @media (max-width: ${firstMediaQuery}){
+    width:90%;
+    margin-left:5%;
+  }
+
 `
 
 
@@ -161,6 +182,17 @@ const StyledAltIMG = styled.img`
 
   @media (max-width: ${secondMediaQuery}){
     height:55%;
+  }
+
+`
+
+const StyledAltTechnologiesDiv = styled.div`
+  display:none;
+  font-family: 'Oswald', sans-serif;
+
+  @media (max-width: ${firstMediaQuery}) {
+    display:inline-block;
+    font-size:1.2rem;
   }
 
 `

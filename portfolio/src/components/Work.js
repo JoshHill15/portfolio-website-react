@@ -1,10 +1,9 @@
 import React from "react"
-import styled from "styled-components";
 import FirstProject from "../projects/FirstProject"
 import SecondProject from "../projects/SecondProject"
 import ThirdProject from "../projects/ThirdProject";
 import Footer from "./Footer"
-
+import Skills from "./Skills"
 
 function Work() {
 
@@ -18,6 +17,9 @@ function Work() {
       </div>
       <div>
         <ThirdProject />
+      </div>
+      <div>
+        <Skills />
       </div>
       <div>
         <Footer />

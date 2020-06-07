@@ -1,7 +1,6 @@
 import React from "react"
 import disney from "../images/parent-disney_50.png"
 import styled from "styled-components";
-import AOS from "aos"
 import 'aos/dist/aos.css'
 import githubSVG from "../images/github-logo.svg"
 import linkSVG from "../images/link.svg"
@@ -12,6 +11,7 @@ const thirdMediaQuery = "1000px"
 const fourthMediaQuery = "800px"
 const fifthMediaQuery = "730px"
 const sixthMediaQuery = "370px"
+const seventhMediaQuery = "290px"
 
 function SecondProject() {
 
@@ -226,6 +226,11 @@ const StyledAltTechnologiesDiv = styled.div`
     @media (max-width: ${thirdMediaQuery}) {
       display:inline-block;
       font-size:1.2rem;
+    }
+
+    @media (max-width: ${seventhMediaQuery}) {
+      display:inline-block;
+      font-size:1rem;
     }
 
 `
