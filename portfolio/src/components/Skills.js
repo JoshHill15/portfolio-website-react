@@ -1,6 +1,9 @@
 import React from "react"
 import styled from "styled-components";
 
+const firstMediaQuery = "1700px"
+const secondMediaQuery = "500px"
+
 function Skills() {
 
   return (
@@ -41,7 +44,12 @@ const MainDiv = styled.div`
 
 const InnerDiv = styled.div`
   display:flex;
-  height:90vh;
+  height:100%;
+
+  @media (max-width: ${firstMediaQuery}){
+    height:90%;
+  }
+
 `
 
 const StyledH1 = styled.h1`
@@ -51,23 +59,36 @@ const StyledH1 = styled.h1`
   width:100%;
   margin:0;
   padding-top:2%;
+
+  @media (max-width: ${secondMediaQuery}){
+    font-size:2rem;
+  }
 `
 
 const LeftDiv = styled.div`
   width:50%;
   height:80%;
   margin-top:2%;
+
 `
 
 const RightDiv = styled.div`
   width:50%;
   height:80%;
   margin-top:2%;
+
+
 `
 
 const StyledP = styled.p`
   font-size:2rem;
   font-family: 'Oswald', sans-serif;
+
+  @media (max-width: ${firstMediaQuery}){
+    font-size:1.7rem;
+  }
+
+
 
 
 `

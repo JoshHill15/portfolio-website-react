@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components";
 import PDF from "../images/Joshua_Hill_Resume.pdf"
 
-
+const firstMediaQuery = "500px"
 
 function Footer() {
 
@@ -25,6 +25,12 @@ const MainDiv = styled.div`
   align-items:center;
   color:white;
   justify-content:space-evenly;
+  padding:25px 0;
+
+
+  @media (max-width: ${firstMediaQuery}) {
+    flex-direction:column;
+  }
 `
 
 const StyledGit = styled.a`
