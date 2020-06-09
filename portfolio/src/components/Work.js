@@ -9,21 +9,21 @@ function Work() {
 
   return (
     <section>
-      <div id="work">
+      <section id="work">
         <FirstProject />
-      </div>
-      <div id="work2">
+      </section>
+      <section id="work2">
         <SecondProject />
-      </div>
-      <div>
+      </section>
+      <section>
         <ThirdProject />
-      </div>
-      <div>
+      </section>
+      <section>
         <Skills />
-      </div>
-      <div>
+      </section>
+      <section>
         <Footer />
-      </div>
+      </section>
     </section>
   )
 }
