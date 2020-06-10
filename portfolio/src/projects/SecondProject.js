@@ -10,7 +10,7 @@ const secondMediaQuery = "1240px"
 const thirdMediaQuery = "1000px"
 const fourthMediaQuery = "800px"
 const fifthMediaQuery = "730px"
-const sixthMediaQuery = "370px"
+const sixthMediaQuery = "400px"
 const seventhMediaQuery = "290px"
 
 function SecondProject() {
@@ -71,10 +71,10 @@ function SecondProject() {
           protection and safety to children, while parents can still ride the attractions that they're
           interested in.
         </StyledP>
-        <StyledP data-aos="fade-up">Role: Backend Developer</StyledP>
+        <StyledP data-aos="fade-up">Backend Developer - developed an authentication system and postgres database, secure routes, instant messaging between users.</StyledP>
         <StyledButtonsDiv>
-          <a rel="noopener noreferrer" href="https://github.com/Build-Week-Web26-Disney-Parents/BE" target="_blank"><StyledGitIMG src={githubSVG} data-aos="fade-up" /></a>
-          <a rel="noopener noreferrer" target="_blank" href="https://disneyparent-5o9m3e76w.now.sh/"><StyledLinkIMG src={linkSVG} data-aos="fade-up" /></a>
+          <a rel="noopener noreferrer" href="https://github.com/Build-Week-Web26-Disney-Parents/BE" target="_blank"><StyledGitIMG src={githubSVG} data-aos="fade-up" alt="github" /></a>
+          <a rel="noopener noreferrer" target="_blank" href="https://disneyparent-5o9m3e76w.now.sh/"><StyledLinkIMG src={linkSVG} data-aos="fade-up" alt="linkedin" /></a>
         </StyledButtonsDiv>
       </ContentDiv>
     </MainDiv>
@@ -111,6 +111,11 @@ const StyledAltIMG = styled.img`
     width:90%;
     height:50%;
     display:inline-block;
+  }
+
+  
+  @media (max-width: ${fourthMediaQuery}){
+    height:45%;
   }
 
   @media (max-width: ${fifthMediaQuery}){
@@ -168,17 +173,20 @@ const StyledP = styled.p`
   font-family: 'Noto Serif KR', serif;
   font-size:1.3rem;
 
+  @media (max-width: ${secondMediaQuery}){
+    font-size:1.2rem;
+
+  }
+
   @media (max-width: ${thirdMediaQuery}){
     width:90%;
     margin-left:5%;
-    font-size:1.1rem;
+    font-size:1rem;
 
   }
 
   @media (max-width: ${fifthMediaQuery}){
-    width:90%;
-    margin-left:5%;
-    font-size:1rem;
+    font-size:.95rem;
   }
 
 `

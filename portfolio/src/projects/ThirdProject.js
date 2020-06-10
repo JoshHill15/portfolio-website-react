@@ -36,7 +36,7 @@ function ThirdProject() {
       <ContentDiv data-aos="fade-up">
         <StyledH1 data-aos="fade-up">Lendr</StyledH1>
         <StyledAltIMG src={lendr} alt="lendr" />
-         <StyledAltTechnologiesDiv>
+        <StyledAltTechnologiesDiv>
           <span>GSAP </span>
           <StyledSpans>| </StyledSpans>
           <span>Formik </span>
@@ -56,10 +56,10 @@ function ThirdProject() {
         <StyledP data-aos="fade-up">A convenient application to keep track of items lent
         between people.
         </StyledP>
-        <StyledP data-aos="fade-up">Role: Frontend Developer</StyledP>
+        <StyledP data-aos="fade-up">Frontend Developer - Collaborated on design, implemented state management with redux.</StyledP>
         <StyledButtonsDiv>
-          <a rel="noopener noreferrer" href="https://github.com/JoshHill15/lendr" target="_blank"><StyledGitIMG src={githubSVG} data-aos="fade-up" /></a>
-          <a rel="noopener noreferrer" target="_blank" href="https://lendr-beige.now.sh/"><StyledLinkIMG src={linkSVG} data-aos="fade-up" /></a>
+          <a rel="noopener noreferrer" href="https://github.com/JoshHill15/lendr" target="_blank"><StyledGitIMG src={githubSVG} data-aos="fade-up" alt="github" /></a>
+          <a rel="noopener noreferrer" target="_blank" href="https://lendr-beige.now.sh/"><StyledLinkIMG src={linkSVG} data-aos="fade-up" alt="linkedin" /></a>
         </StyledButtonsDiv>
       </ContentDiv>
     </MainDiv>
@@ -132,6 +132,7 @@ const StyledP = styled.p`
     @media (max-width: ${firstMediaQuery}){
     width:90%;
     margin-left:5%;
+    font-size:1.1rem;
   }
 
 `
@@ -182,6 +183,10 @@ const StyledAltIMG = styled.img`
 
   @media (max-width: ${secondMediaQuery}){
     height:55%;
+  }
+
+  @media (max-width: ${thirdMediaQuery}){
+    height:42%;
   }
 
 `

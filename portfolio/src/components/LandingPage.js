@@ -4,9 +4,9 @@ import emailSVG from "../images/email.svg"
 import githubSVG from "../images/github-logo.svg"
 import linkedinSVG from "../images/linkedin.svg"
 import resumeSVG from "../images/portfolio.svg"
-import background from "../images/midcity.jpg"
-import avatar from "../images/joshhill15.png"
+import avatar from "../images/joshhill15_small.png"
 import PDF from "../images/Joshua_Hill_Resume.pdf"
+import bg from "../images/midcityimg.webp"
 
 import "../landingpage.css"
 
@@ -66,12 +66,12 @@ const MainDiv = styled.div`
   align-items:center;
   justify-content: center;
   flex-direction:column;
-  background-image: url(${background});
-  opacity:.77;
+  background-image: url(${bg});
   max-size:100%;
   background-size:cover;
   background-position:center;
   height:100vh;
+  opacity:.95;
 `
 
 const AvatarDiv = styled.div`
@@ -106,6 +106,7 @@ const AlignName = styled.div`
 
 const StyledName = styled.h1`
   font-size:2.8rem;
+  font-weight:bold;
 
   @media(max-width: ${thirdMediaQuery}) {
     font-size:2.3rem;
@@ -126,10 +127,11 @@ const AlignTitle = styled.div`
 `
 
 const StyledTitle = styled.h2`
+  font-weight:bold;
 
-@media(max-width: ${fourthMediaQuery}) {
-  font-size:1.1rem;
-}
+  @media(max-width: ${fourthMediaQuery}) {
+    font-size:1.1rem;
+  }
 `
 
 const StyledIcons = styled.div`

@@ -81,15 +81,12 @@ const RightDiv = styled.div`
 `
 
 const StyledP = styled.p`
-  font-size:2rem;
+  font-size:1.8rem;
   font-family: 'Oswald', sans-serif;
 
   @media (max-width: ${firstMediaQuery}){
-    font-size:1.7rem;
+    font-size:1.6rem;
   }
-
-
-
 
 `
 
