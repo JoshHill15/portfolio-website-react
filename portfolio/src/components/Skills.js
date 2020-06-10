@@ -8,29 +8,29 @@ function Skills() {
 
   return (
     <MainDiv>
-      <StyledH1>Technologies I've worked with:</StyledH1>
+      <StyledH1 data-aos="fade-up">Technologies I've worked with:</StyledH1>
       <InnerDiv>
         <LeftDiv>
-          <StyledP>React</StyledP>
-          <StyledP>Redux</StyledP>
-          <StyledP>Axios</StyledP>
-          <StyledP>JavaScript</StyledP>
-          <StyledP>Python3</StyledP>
-          <StyledP>Apollo-server</StyledP>
-          <StyledP>Express</StyledP>
-          <StyledP>Jest</StyledP>
-          <StyledP>Git</StyledP>
+          <StyledP data-aos="fade-up">React</StyledP>
+          <StyledP data-aos="fade-up">Redux</StyledP>
+          <StyledP data-aos="fade-up">Axios</StyledP>
+          <StyledP data-aos="fade-up">JavaScript</StyledP>
+          <StyledP data-aos="fade-up">Python3</StyledP>
+          <StyledP data-aos="fade-up">Apollo-server</StyledP>
+          <StyledP data-aos="fade-up">Express</StyledP>
+          <StyledP data-aos="fade-up">Jest</StyledP>
+          <StyledP data-aos="fade-up">Git</StyledP>
         </LeftDiv>
         <RightDiv>
-          <StyledP>Styled-components</StyledP>
-          <StyledP>Material-UI</StyledP>
-          <StyledP>Node</StyledP>
-          <StyledP>Graphql</StyledP>
-          <StyledP>Django</StyledP>
-          <StyledP>HTML</StyledP>
-          <StyledP>CSS</StyledP>
-          <StyledP>Supertest</StyledP>
-          <StyledP>MySQL</StyledP>
+          <StyledP data-aos="fade-up">Styled-components</StyledP>
+          <StyledP data-aos="fade-up">Material-UI</StyledP>
+          <StyledP data-aos="fade-up">Node</StyledP>
+          <StyledP data-aos="fade-up">Graphql</StyledP>
+          <StyledP data-aos="fade-up">Django</StyledP>
+          <StyledP data-aos="fade-up">HTML</StyledP>
+          <StyledP data-aos="fade-up">CSS</StyledP>
+          <StyledP data-aos="fade-up">Supertest</StyledP>
+          <StyledP data-aos="fade-up">MySQL</StyledP>
         </RightDiv>
       </InnerDiv>
     </MainDiv>
