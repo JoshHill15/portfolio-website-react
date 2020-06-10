@@ -15,9 +15,6 @@ const secondMediaQuery = "730px"
 const thirdMediaQuery = "550px"
 const fourthMediaQuery = "450px"
 
-
-
-
 function LandingPage() {
   return (
     <MainDiv>
@@ -54,11 +51,12 @@ function LandingPage() {
         <div className="arrow"></div>
         <div className="arrow"></div>
         <div className="arrow"></div>
-        <a href="#work"><span className="to-work">My work</span></a>
+        <a id="work_ref" href="#work"><span className="to-work">My work</span></a>
       </div>
     </MainDiv>
   )
 }
+
 
 const MainDiv = styled.div`
   border-size:border-box;
