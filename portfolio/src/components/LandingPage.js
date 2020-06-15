@@ -5,8 +5,9 @@ import githubSVG from "../images/github-logo.svg"
 import linkedinSVG from "../images/linkedin.svg"
 import resumeSVG from "../images/portfolio.svg"
 import avatar from "../images/joshhill15_small.png"
-import PDF from "../images/Joshua_Hill_Resume.pdf"
+import PDF from "../images/My_Resume.pdf"
 import bg from "../images/midcityimg.webp"
+import mobile_bg from "../images/midcityimg_mobile.jpg"
 
 import "../landingpage.css"
 
@@ -70,6 +71,10 @@ const MainDiv = styled.div`
   background-position:center;
   height:100vh;
   opacity:.95;
+
+  @media(max-width: ${thirdMediaQuery}) {
+    background-image: url(${mobile_bg});
+  }
 `
 
 const AvatarDiv = styled.div`
@@ -88,6 +93,7 @@ const AvatarDiv = styled.div`
   @media(max-width: ${thirdMediaQuery}) {
     width:55%;
   }
+
 `
 
 const Avatar = styled.img`

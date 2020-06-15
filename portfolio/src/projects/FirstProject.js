@@ -69,7 +69,7 @@ function FirstProject() {
              if you are a paid member.</StyledP>
           <StyledP data-aos="fade-up">Full Stack Developer - Responsible for refactoring backend to apollo-server, integrating paypal subscriptions, and adding social media.</StyledP>
           <StyledButtonsDiv data-aos="fade-up">
-            <a rel="noopener noreferrer" href="https://github.com/orgs/Lambda-School-Labs/teams/labs-21-sauti-data-bank" target="_blank"><StyledGitIMG src={githubSVG} alt="github" /></a>
+            <a rel="noopener noreferrer" href="https://github.com/Lambda-School-Labs/sauti-databank-fe" target="_blank"><StyledGitIMG src={githubSVG} alt="github" /></a>
             <a rel="noopener noreferrer" target="_blank" href="https://www.databank.sautiafrica.org/"><StyledLinkIMG src={linkSVG} alt="linkedin" /></a>
           </StyledButtonsDiv>
         </ContentDiv>
