@@ -5,49 +5,51 @@ import githubSVG from "../images/github-logo.svg"
 import linkedinSVG from "../images/linkedin.svg"
 import resumeSVG from "../images/portfolio.svg"
 import avatar from "../images/joshhill15_small.png"
-import PDF from "../images/My_Resume.pdf"
 import bg from "../images/midcityimg.webp"
 import mobile_bg from "../images/midcityimg_mobile.jpg"
-
+import PDF from "../images/Final_Resume.pdf"
 import "../landingpage.css"
 
 const firstMediaQuery = "1200px"
-const secondMediaQuery = "730px"
-const thirdMediaQuery = "550px"
+const secondMediaQuery = "850px"
+const thirdMediaQuery = "570px"
 const fourthMediaQuery = "450px"
+const fifthMediaQuery = "350px"
 
 function LandingPage() {
   return (
     <MainDiv>
-      <AvatarDiv className="avatar">
-        <Avatar src={avatar} alt="avatar" />
-      </AvatarDiv>
-      <AlignName>
-        <StyledName className="name">Hello, my name's </StyledName>
-        <StyledName className="name" className="main-name">Josh</StyledName>
-      </AlignName>
-      <AlignTitle>
-        <StyledTitle className="title">I'm a</StyledTitle>
-        <StyledTitle className="title" className="main-title">Full Stack Web Developer </StyledTitle>
-      </AlignTitle>
-      <StyledIcons className="icons">
-        <GroupedGit>
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/JoshHill15"><StyledGit className="first-icon" src={githubSVG} alt="github" /></a>
-          <StyledP className="first-icon">Github</StyledP>
-        </GroupedGit>
-        <GroupedLinkedin>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/josh-hill-b2b463b8/"><StyledLinkedin className="second-icon" src={linkedinSVG} alt="Linkedin" /></a>
-          <StyledP className="second-icon">Linked in</StyledP>
-        </GroupedLinkedin>
-        <GroupedMail>
-          <a href="mailto:josh_hill15@me.com?subject=Mailed from portfolio site"><StyledMail className="third-icon" src={emailSVG} alt="mail" /></a>
-          <StyledP className="third-icon">Contact Me</StyledP>
-        </GroupedMail>
-        <GroupedResume>
-          <a href={PDF} target="_blank" rel="noopener noreferrer" ><StyledResume className="fourth-icon" src={resumeSVG} alt="Resume" /></a>
-          <StyledP className="fourth-icon">Resume</StyledP>
-        </GroupedResume>
-      </StyledIcons>
+      <SupportingDiv>
+        <AvatarDiv className="avatar">
+          <Avatar src={avatar} alt="avatar" />
+        </AvatarDiv>
+        <AlignName>
+          <StyledName className="name">Hello, my name's </StyledName>
+          <StyledName className="name" className="main-name">Josh</StyledName>
+        </AlignName>
+        <AlignTitle>
+          <StyledTitle className="title">I'm a</StyledTitle>
+          <StyledTitle className="title" className="main-title">Full Stack Web Developer </StyledTitle>
+        </AlignTitle>
+        <StyledIcons className="icons">
+          <GroupedGit>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/JoshHill15"><StyledGit className="first-icon" src={githubSVG} alt="github" /></a>
+            <StyledP className="first-icon">Github</StyledP>
+          </GroupedGit>
+          <GroupedLinkedin>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/josh-hill-b2b463b8/"><StyledLinkedin className="second-icon" src={linkedinSVG} alt="Linkedin" /></a>
+            <StyledP className="second-icon">Linked in</StyledP>
+          </GroupedLinkedin>
+          <GroupedMail>
+            <a href="mailto:josh_hill15@me.com?subject=Mailed from portfolio site"><StyledMail className="third-icon" src={emailSVG} alt="mail" /></a>
+            <StyledP className="third-icon">Mail</StyledP>
+          </GroupedMail>
+          <GroupedResume>
+            <a href={PDF} target="_blank" rel="noopener noreferrer" ><StyledResume className="fourth-icon" src={resumeSVG} alt="Resume" /></a>
+            <StyledP className="fourth-icon">Resume</StyledP>
+          </GroupedResume>
+        </StyledIcons>
+      </SupportingDiv>
       <div className="to-work-container">
         <div className="arrow"></div>
         <div className="arrow"></div>
@@ -65,33 +67,61 @@ const MainDiv = styled.div`
   align-items:center;
   justify-content: center;
   flex-direction:column;
+
   background-image: url(${bg});
   max-size:100%;
   background-size:cover;
   background-position:center;
   height:100vh;
-  opacity:.95;
+  // background: rgba(0, 0, 225, 0.6);
 
   @media(max-width: ${thirdMediaQuery}) {
     background-image: url(${mobile_bg});
   }
 `
 
+const SupportingDiv = styled.div`
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction:column;
+  background: rgba(240, 240, 240, 0.4);
+  width:60%;
+  height:60%;
+  border-radius:15px;
+  padding:2%;
+
+  @media(max-width: ${fourthMediaQuery}) {
+    height:70%;
+    width:70%;
+  }
+
+  @media(max-width: ${fifthMediaQuery}) {
+    height:80%;
+    width:80%;
+  }
+
+`
+
 const AvatarDiv = styled.div`
-  width:17%;
-  height:13%;
+  width:25%;
+  height:19%;
 
   @media(max-width: ${firstMediaQuery}) {
-    width:24%;
+    width:38%;
   }
 
   
   @media(max-width: ${secondMediaQuery}) {
-    width:42%;
+    width:50%;
   }
 
   @media(max-width: ${thirdMediaQuery}) {
-    width:55%;
+    width:60%;
+  }
+
+  @media(max-width: ${fifthMediaQuery}) {
+    width:90%;
   }
 
 `
@@ -109,14 +139,23 @@ const AlignName = styled.div`
 `
 
 const StyledName = styled.h1`
-  font-size:2.8rem;
+  font-size:3.2rem;
   font-weight:bold;
 
-  @media(max-width: ${thirdMediaQuery}) {
-    font-size:2.3rem;
+  @media(max-width: ${firstMediaQuery}) {
+    font-size:2.5rem;
   }
+
+  @media(max-width: ${secondMediaQuery}) {
+    font-size:2rem;
+  }
+
+  @media(max-width: ${thirdMediaQuery}) {
+    font-size:1.6rem;
+  }
+
   @media(max-width: ${fourthMediaQuery}) {
-    font-size:1.8rem;
+    font-size:1.3rem;
   }
 `
 
@@ -132,28 +171,42 @@ const AlignTitle = styled.div`
 
 const StyledTitle = styled.h2`
   font-weight:bold;
+  font-size:1.9rem;
+
+  @media(max-width: ${firstMediaQuery}) {
+    font-size:1.5rem;
+  }
+
+  @media(max-width: ${secondMediaQuery}) {
+    font-size:1.2rem;
+  }
+
+  @media(max-width: ${thirdMediaQuery}) {
+    font-size:1.1rem;
+  }
+
 
   @media(max-width: ${fourthMediaQuery}) {
-    font-size:1.1rem;
+    font-size:.9rem;
   }
 `
 
 const StyledIcons = styled.div`
   align-items:center;
   display:flex;
-  width:30%;
+  width:50%;
   justify-content:flex-end;
 
     @media(max-width: ${firstMediaQuery}) {
-      width:45%;
+      width:65%;
     }
 
     @media(max-width: ${secondMediaQuery}) {
-      width:70%;
+      width:80%;
     }
 
     @media(max-width: ${thirdMediaQuery}) {
-      width:85%;
+      width:95%;
     }
 
     @media(max-width: ${fourthMediaQuery}) {
@@ -162,6 +215,7 @@ const StyledIcons = styled.div`
 `
 const StyledGit = styled.img`
   width:40%;
+  
 `
 
 const StyledLinkedin = styled.img`
