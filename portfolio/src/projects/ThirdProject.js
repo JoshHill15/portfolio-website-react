@@ -7,7 +7,7 @@ import linkSVG from "../images/link.svg"
 
 const firstMediaQuery = "1000px"
 const secondMediaQuery = "690px"
-const thirdMediaQuery = "370px"
+const thirdMediaQuery = "376px"
 
 function ThirdProject() {
 

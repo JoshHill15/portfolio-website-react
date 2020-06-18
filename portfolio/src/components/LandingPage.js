@@ -270,6 +270,11 @@ const GroupedResume = styled.div`
 
 const StyledP = styled.p`
   color:white;
+
+  @media(max-width: ${fourthMediaQuery}) {
+    font-size:.8rem;
+  }
+
 `
 
 
